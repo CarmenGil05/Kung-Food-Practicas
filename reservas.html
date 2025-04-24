@@ -1,41 +1,83 @@
-<section id="reservas" class="py-5 bg-light">        <div class="container">
-            <h2 class="text-center mb-4">Reservar Mesa</h2>
-            <div class="row justify-content-center">
-                <div class="col-md-6">
-                    <form>
-                        <div class="mb-3">
-                            <label for="nombre" class="form-label">Nombre</label>
-                            <input type="text" class="form-control" id="nombre" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="telefono" class="form-label">Teléfono</label>
-                            <input type="tel" class="form-control" id="telefono" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="fecha" class="form-label">Fecha</label>
-                            <input type="date" class="form-control" id="fecha" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="hora" class="form-label">Hora</label>
-                            <input type="time" class="form-control" id="hora" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="personas" class="form-label">Número de personas</label>
-                            <select class="form-select" id="personas" required>
-                                <option value="1">1 persona</option>
-                                <option value="2">2 personas</option>
-                                <option value="3">3 personas</option>
-                                <option value="4">4 personas</option>
-                                <option value="5">5 personas</option>
-                                <option value="6">6 personas o más</option>
-                            </select>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Reservar</button>
-                    </form>
-                </div>
-            </div>
-        </div>    </section> 
+<html lang="es">
+<script src="C:\Users\manue\OneDrive\Documentos\Lenguuaje de Marcas\jquery.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <title>Reservar Mesa</title>
+  <link rel="stylesheet" href="C:\Users\manue\OneDrive\Documentos\Lenguuaje de Marcas\Estudio html\css\reserva.css"> 
+</head>
+<body>
+
+<section id="reservas" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="ReservarMesa">Reservar Mesa</h2>
+
+    <div>
+      <div class="opciones">
+        <form id="formulario" onsubmit="enviarFormulario(event)">
+          <div class="name">
+            <label for="nombre" class="label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" required>
+          </div>
+
+          <div class="correo">
+            <label for="email" class="label">Email</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+
+          <div class="number">
+            <label for="telefono" class="label">Teléfono</label>
+            <input type="tel" class="form-control" id="telefono" required>
+          </div>
+
+          <div class="fech">
+            <label for="fecha" class="label">Fecha</label>
+            <input type="date" class="form-control" id="fecha" required>
+          </div>
+
+          <div class="hor">
+            <label for="hora" class="label">Hora</label>
+            <input type="time" class="form-control" id="hora" required>
+          </div>
+
+          <div class="person">
+            <label for="personas" class="label">Número de personas</label>
+            <select class="form-select" id="personas" required>
+              <option value="">Selecciona</option>
+              <option value="1">1 persona</option>
+              <option value="2">2 personas</option>
+              <option value="3">3 personas</option>
+              <option value="4">4 personas</option>
+              <option value="5">5 personas</option>
+              <option value="6">6 personas o más</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Reservar</button>
+        </form>
+        <p id="mensaje"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+    function enviarFormulario(event) {
+      event.preventDefault();
+  
+      
+      const mensaje = document.getElementById("mensaje");
+      mensaje.textContent = "¡Tu reserva ha sido enviada con éxito!";
+  
+     
+      document.getElementById("formulario").reset();
+  
+      
+      setTimeout(() => {
+        mensaje.textContent = "";
+      }, 5000);
+    }
+  </script>
+  
+
+</body>
+</html>
