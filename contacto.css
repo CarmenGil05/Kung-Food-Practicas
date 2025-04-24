@@ -1,0 +1,17 @@
+body {
+    background-color: #f8f3e4 ;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 800px;
+    margin: auto;
+    
+ }
+.contacto {
+color: #dc3545;
+font-size: 40px;
+}
+h3 {
+font-size: 25px;    
+}
