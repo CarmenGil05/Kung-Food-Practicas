@@ -1,0 +1,21 @@
+.ReservarMesa {
+text-align: center;
+color: #dc3545;
+font-size: 65px;
+}
+body {
+background-color: #f8f3e4 ;
+}
+.opciones {
+font-style: italic;
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+justify-content: center;
+max-width: 800px;
+margin: auto;
+font-size: 25px;
+}
+.name, .correo, .number, .fech, .hor, .person {
+    margin-bottom: 25px;
+}
