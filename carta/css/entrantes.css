@@ -1,0 +1,145 @@
+@font-face {
+    font-family: 'Sigokae';
+    src: url('fonts/Sigokae Demo.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    background-color: #f8f3e4;
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar-brand,
+.titulo-principal,
+.lema,
+.frase-pie {
+    font-family: 'Sigokae', Arial, sans-serif; 
+}
+
+.titulo-principal, 
+.navbar-brand {
+    color: #dc3545;
+}
+
+.logo-contenedor {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.logo {
+    width: 130px;
+    height: auto;
+    justify-content: left;
+    object-fit: cover; 
+    border-radius: 50%; 
+    border: 3px solid #d62728;
+    margin: 0;
+}
+
+.titulo-principal {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10%;
+    font-family: 'Sigokae', cursive;
+    font-size: 3rem;
+    color: #d62728;
+    margin: 0;
+}
+
+#entrantes h2 {
+    margin-bottom: 40px; /* Espacio debajo del título */
+    font-size: 2.5rem; /* Tamaño bonito para el título */
+    color: #d62728; /* Color rojo igual que tu marca */
+    text-align: center;
+}
+
+.lema {
+    font-size: 1.2rem;
+    color: #333;
+    text-align: center;
+}
+
+footer {
+    margin-top: 50px;
+    padding: 20px 0;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+/* Estilo extra para las cartas */
+.plato {
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.plato:hover {
+    transform: scale(1.05);
+}
+
+.plato img {
+    border-radius: 10px;
+    width: 100%;
+    height: 250px; /* Altura fija para que todas sean iguales */
+    object-fit: cover; /* Recorta la imagen para que se ajuste */
+    margin:  auto;
+    display: block;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border: 2px solid #000000;
+}
+
+
+
+.plato h4 {
+    margin-top: 10px;
+    color: #d62728;
+    font-family: 'Sigokae', cursive;
+}
+
+.plato p {
+    color: #555;
+}
+
+.cuadro-enlaces {
+    background-color: #ffffff;
+    border: 3px solid #d62728;
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 300px;
+    margin: 30px auto;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.cuadro-enlaces h2 {
+    color: #d62728;
+    font-family: 'Sigokae', cursive;
+    margin-bottom: 20px;
+}
+
+.cuadro-enlaces ul {
+    list-style: none;
+    padding: 0;
+}
+
+.cuadro-enlaces ul li {
+    margin: 10px 0;
+}
+
+.cuadro-enlaces ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    transition: color 0.3s;
+}
+
+.cuadro-enlaces ul li a:hover {
+    color: #d62728;
+}
