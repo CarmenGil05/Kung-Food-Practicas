@@ -53,9 +53,84 @@ body {
 }
 
 .lema {
+    font-family: 'Sigokae', cursive;
     font-size: 1.2rem;
     color: #333;
     text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Titulos de secciones */
+.titulos-carta {
+    font-family: 'Sigokae', cursive;
+    font-size: 1.8rem;
+    color: #d62728;
+    margin: 30px 20px 10px;
+}
+
+hr {
+    border: none;
+    height: 3px;
+    background-color: #d62728;
+    margin: 5px 20px;
+}
+#carruselEntrantes {
+    max-width: 1000px; 
+    margin: 30px auto; 
+}
+
+#carruselPrimeros {
+    max-width: 1000px; 
+    margin: 30px auto; 
+}
+
+#carruselPostres {
+    max-width: 1000px; 
+    margin: 30px auto; 
+}
+.carousel-inner img {
+    border-radius: 20px;
+    height: 300px; 
+    object-fit: cover;
+}
+.carousel-inner .row {
+    margin: 0;
+}
+
+.carousel-inner .col-4 {
+    padding: 5px;
+}
+
+
+.carousel {
+    margin: 20px auto;
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+}
+
+.carousel-inner {
+    border-radius: 10px;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 10%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
 }
 
 footer {
@@ -63,4 +138,15 @@ footer {
     padding: 20px 0;
     background-color: #f8f9fa;
     text-align: center;
+}
+
+.frase-pie {
+    font-family: 'Sigokae', cursive;
+    font-size: 1rem;
+    background-color: #d62728;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 10px;
 }
