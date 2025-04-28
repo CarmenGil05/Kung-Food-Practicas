@@ -111,3 +111,41 @@ footer {
 .plato p {
     color: #555;
 }
+
+.cuadro-enlaces {
+    background-color: #ffffff;
+    border: 3px solid #d62728;
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 300px;
+    margin: 30px auto;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.cuadro-enlaces h2 {
+    color: #d62728;
+    font-family: 'Sigokae', cursive;
+    margin-bottom: 20px;
+}
+
+.cuadro-enlaces ul {
+    list-style: none;
+    padding: 0;
+}
+
+.cuadro-enlaces ul li {
+    margin: 10px 0;
+}
+
+.cuadro-enlaces ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    transition: color 0.3s;
+}
+
+.cuadro-enlaces ul li a:hover {
+    color: #d62728;
+}
