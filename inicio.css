@@ -65,6 +65,17 @@ h1 {
     }
   }
   
+  
+.frase-pie {
+  font-family: 'Sigokae', cursive;
+  font-size: 1rem;
+  background-color: #d62728;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
 
 footer {
     margin-top: 50px;
