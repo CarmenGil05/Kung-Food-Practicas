@@ -10,6 +10,7 @@
 
     <!-- Vincular tu CSS personalizado -->
     <link rel="stylesheet" href="principal.css">
+
 </head>
 <body>
 
@@ -38,7 +39,7 @@
             </div>
         </div>
     </nav>
-    
+
     <div class="cuadro-enlaces">
         <h2>Explora más</h2>
         <ul>
@@ -46,10 +47,9 @@
           <li><a href="principal.html">Principales</a></li>
           <li><a href="postres.html">Postres</a></li>
         </ul>
-      </div>
-   
+    </div>
 
-    <!-- Sección de Entrantes -->
+    <!-- Sección de Platos Principales -->
     <section id="entrantes" class="container my-5">
         <div class="row">
             <h2 class="tituloentrantes">Platos Principales</h2>
@@ -57,73 +57,96 @@
             <!-- Primer Plato -->
             <div class="col-md-4 text-center mb-4">
                 <div class="plato">
-                    <img src="img/carta/principales/Arroz_pato.jpeg" alt="Bao de pollo frito" class="img-fluid">
+                    <img src="img/carta/principales/Arroz_pato.jpeg" alt="Arroz Pato" class="img-fluid" onclick="mostrarDescripcion(1)">
                     <h4>Arroz Pato</h4>
                     <p>Precio: 6.50€</p>
+                    <div id="desc1" class="descripcion">
+                        <p>Arroz con pato guisado, acompañado de verduras frescas y especias.</p>
+                    </div>
                 </div>
             </div>
 
             <!-- Segundo Plato -->
             <div class="col-md-4 text-center mb-4">
                 <div class="plato">
-                    <img src="img/carta/principales/Arroz-FRITO.jpeg" alt="Segundo entrante" class="img-fluid">
+                    <img src="img/carta/principales/Arroz-FRITO.jpeg" alt="Arroz Frito" class="img-fluid" onclick="mostrarDescripcion(2)">
                     <h4>Arroz Frito</h4>
                     <p>Precio: 7.50€</p>
+                    <div id="desc2" class="descripcion">
+                        <p>Arroz salteado con vegetales, huevo y una mezcla de salsas orientales.</p>
+                    </div>
                 </div>
             </div>
 
-            <!-- Tercer Entrante -->
+            <!-- Tercer Plato -->
             <div class="col-md-4 text-center mb-4">
                 <div class="plato">
-                    <img src="img/carta/principales/Noodles.jpeg" alt="Tercer entrante" class="img-fluid">
+                    <img src="img/carta/principales/Noodles.jpeg" alt="Noodles" class="img-fluid" onclick="mostrarDescripcion(3)">
                     <h4>Noodles</h4>
                     <p>Precio: 6.00€</p>
+                    <div id="desc3" class="descripcion">
+                        <p>Fideos salteados con verduras frescas y una mezcla de salsas deliciosas.</p>
+                    </div>
                 </div>
             </div>
 
-            <!-- Cuarto Entrante -->
+            <!-- Cuarto Plato -->
             <div class="col-md-4 text-center mb-4">
                 <div class="plato">
-                    <img src="img/carta/principales/Poke-tofu.jpeg" alt="Cuarto entrante" class="img-fluid">
+                    <img src="img/carta/principales/Poke-tofu.jpeg" alt="Poke Tofu" class="img-fluid" onclick="mostrarDescripcion(4)">
                     <h4>Poke Tofu</h4>
                     <p>Precio: 8.50€</p>
+                    <div id="desc4" class="descripcion">
+                        <p>Tofu marinado servido con arroz, verduras frescas y salsa especial.</p>
+                    </div>
                 </div>
             </div>
 
-            
-            <!-- Quinto Entrante -->
+            <!-- Quinto Plato -->
             <div class="col-md-4 text-center mb-4">
                 <div class="plato">
-                    <img src="img/carta/principales/ramen.jpeg" alt="Quinto entrante" class="img-fluid">
+                    <img src="img/carta/principales/ramen.jpeg" alt="Ramen" class="img-fluid" onclick="mostrarDescripcion(5)">
                     <h4>Ramen</h4>
                     <p>Precio: 9.50€</p>
-                </div>
-            </div>
-            
-            <!-- Sexto Entrante -->
-             <div class="col-md-4 text-center mb-4">
-                <div class="plato">
-                    <img src="img/carta/principales/Sushi.jpeg" alt="Sexto entrante" class="img-fluid">
-                    <h4>Sushi</h4>
-                    <p>Precio: 7€</p>
+                    <div id="desc5" class="descripcion">
+                        <p>Sopa de fideos en caldo aromático con carne, huevo y verduras frescas.</p>
+                    </div>
                 </div>
             </div>
 
-            <!-- Septimo Entrante -->
-              <div class="col-md-4 text-center mb-4">
+            <!-- Sexto Plato -->
+            <div class="col-md-4 text-center mb-4">
                 <div class="plato">
-                    <img src="img/carta/principales/Tonkatsu.jpeg" alt="Septimo entrante" class="img-fluid">
+                    <img src="img/carta/principales/Sushi.jpeg" alt="Sushi" class="img-fluid" onclick="mostrarDescripcion(6)">
+                    <h4>Sushi</h4>
+                    <p>Precio: 7.00€</p>
+                    <div id="desc6" class="descripcion">
+                        <p>Rollos de arroz con pescado fresco, alga nori y salsas de acompañamiento.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Séptimo Plato -->
+            <div class="col-md-4 text-center mb-4">
+                <div class="plato">
+                    <img src="img/carta/principales/Tonkatsu.jpeg" alt="Tonkatsu" class="img-fluid" onclick="mostrarDescripcion(7)">
                     <h4>Tonkatsu</h4>
                     <p>Precio: 8.50€</p>
+                    <div id="desc7" class="descripcion">
+                        <p>Costilla de cerdo empanada y frita, acompañada de arroz y ensalada.</p>
+                    </div>
                 </div>
             </div>
 
-            <!-- Septimo Entrante -->
-             <div class="col-md-4 text-center mb-4">
+            <!-- Octavo Plato -->
+            <div class="col-md-4 text-center mb-4">
                 <div class="plato">
-                    <img src="img/carta/principales/Yakisoba-ramen.jpeg" alt="Septimo entrante" class="img-fluid">
-                    <h4>Yakisoba-ramen</h4>
+                    <img src="img/carta/principales/Yakisoba-ramen.jpeg" alt="Yakisoba Ramen" class="img-fluid" onclick="mostrarDescripcion(8)">
+                    <h4>Yakisoba Ramen</h4>
                     <p>Precio: 9.60€</p>
+                    <div id="desc8" class="descripcion">
+                        <p>Fideos salteados con verduras y ramen servido con salsa especial.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -139,6 +162,29 @@
 
     <!-- Bootstrap Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        let timeoutActivo;
+
+        function mostrarDescripcion(id) {
+            // Ocultar todas las descripciones
+            const descripciones = document.querySelectorAll('.descripcion');
+            descripciones.forEach(desc => desc.style.display = 'none');
+
+            // Limpiar el temporizador anterior si existe
+            if (timeoutActivo) clearTimeout(timeoutActivo);
+
+            // Mostrar la nueva descripción
+            const seleccionada = document.getElementById('desc' + id);
+            if (seleccionada) {
+                seleccionada.style.display = 'block';
+
+                // Ocultar después de 5 segundos
+                timeoutActivo = setTimeout(() => {
+                    seleccionada.style.display = 'none';
+                }, 3000);
+            }
+        }
+    </script>
 </body>
 </html>
-

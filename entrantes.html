@@ -10,6 +10,8 @@
 
     <!-- Vincular tu CSS personalizado -->
     <link rel="stylesheet" href="entrantes.css">
+
+
 </head>
 <body>
 
@@ -47,7 +49,6 @@
           <li><a href="postres.html">Postres</a></li>
         </ul>
       </div>
-      
 
     <!-- Sección de Entrantes -->
     <section id="entrantes" class="container my-5">
@@ -57,64 +58,84 @@
             <!-- Primer Entrante -->
             <div class="col-md-4 text-center mb-4">
                 <div class="plato">
-                    <img src="img/carta/entrantes/Bao_pollo.jpeg" alt="Bao de pollo frito" class="img-fluid">
+                    <img src="img/carta/entrantes/Bao_pollo.jpeg" alt="Bao de pollo frito" class="img-fluid" onclick="mostrarDescripcion(1)">
                     <h4>Bao de Pollo Frito</h4>
                     <p>Precio: 6.50€</p>
+                    <div id="desc1" class="descripcion">
+                        <p>Panecillo al vapor relleno de pollo crujiente, salsa hoisin y encurtidos.</p>
+                    </div>
                 </div>
             </div>
 
             <!-- Segundo Entrante -->
             <div class="col-md-4 text-center mb-4">
                 <div class="plato">
-                    <img src="img/carta/entrantes/Rollitos_de_primavera.jpeg" alt="Segundo entrante" class="img-fluid">
+                    <img src="img/carta/entrantes/Rollitos_de_primavera.jpeg" alt="Rollitos de primavera" class="img-fluid" onclick="mostrarDescripcion(2)">
                     <h4>Rollitos de primavera</h4>
                     <p>Precio: 5.00€</p>
+                    <div id="desc2" class="descripcion">
+                        <p>Rollitos fritos rellenos de verduras y carne, acompañados de salsa agridulce.</p>
+                    </div>
                 </div>
             </div>
 
             <!-- Tercer Entrante -->
             <div class="col-md-4 text-center mb-4">
                 <div class="plato">
-                    <img src="img/carta/entrantes/Pollo-teriyaki.jpeg" alt="Tercer entrante" class="img-fluid">
+                    <img src="img/carta/entrantes/Pollo-teriyaki.jpeg" alt="Pollo Teriyaki" class="img-fluid" onclick="mostrarDescripcion(3)">
                     <h4>Pollo Teriyaki</h4>
                     <p>Precio: 7.00€</p>
+                    <div id="desc3" class="descripcion">
+                        <p>Pollo marinado en salsa teriyaki y asado a la parrilla.</p>
+                    </div>
                 </div>
             </div>
 
             <!-- Cuarto Entrante -->
             <div class="col-md-4 text-center mb-4">
                 <div class="plato">
-                    <img src="img/carta/entrantes/Gyozas.jpeg" alt="Cuarto entrante" class="img-fluid">
+                    <img src="img/carta/entrantes/Gyozas.jpeg" alt="Gyozas" class="img-fluid" onclick="mostrarDescripcion(4)">
                     <h4>Gyozas</h4>
                     <p>Precio: 4.50€</p>
+                    <div id="desc4" class="descripcion">
+                        <p>Empanadillas japonesas rellenas de carne y verduras, servidas con salsa de soja.</p>
+                    </div>
                 </div>
             </div>
 
-            
             <!-- Quinto Entrante -->
             <div class="col-md-4 text-center mb-4">
                 <div class="plato">
-                    <img src="img/carta/entrantes/Edamame.jpeg" alt="Quinto entrante" class="img-fluid">
+                    <img src="img/carta/entrantes/Edamame.jpeg" alt="Edamame" class="img-fluid" onclick="mostrarDescripcion(5)">
                     <h4>Edamame</h4>
                     <p>Precio: 5.25€</p>
-                </div>
-            </div>
-            
-            <!-- Sexto Entrante -->
-             <div class="col-md-4 text-center mb-4">
-                <div class="plato">
-                    <img src="img/carta/entrantes/Bao_vegetariano.jpeg" alt="Sexto entrante" class="img-fluid">
-                    <h4>Bao Vegetariano</h4>
-                    <p>Precio: 6€</p>
+                    <div id="desc5" class="descripcion">
+                        <p>Vainas de soja cocidas con sal marina y un toque de ajo.</p>
+                    </div>
                 </div>
             </div>
 
-            <!-- Septimo Entrante -->
-              <div class="col-md-4 text-center mb-4">
+            <!-- Sexto Entrante -->
+            <div class="col-md-4 text-center mb-4">
                 <div class="plato">
-                    <img src="img/carta/entrantes/Bao_tofu.jpeg" alt="Septimo entrante" class="img-fluid">
+                    <img src="img/carta/entrantes/Bao_vegetariano.jpeg" alt="Bao Vegetariano" class="img-fluid" onclick="mostrarDescripcion(6)">
+                    <h4>Bao Vegetariano</h4>
+                    <p>Precio: 6€</p>
+                    <div id="desc6" class="descripcion">
+                        <p>Panecillo al vapor relleno de verduras salteadas y salsa de soja.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Séptimo Entrante -->
+            <div class="col-md-4 text-center mb-4">
+                <div class="plato">
+                    <img src="img/carta/entrantes/Bao_tofu.jpeg" alt="Bao Tofu" class="img-fluid" onclick="mostrarDescripcion(7)">
                     <h4>Bao Tofu</h4>
                     <p>Precio: 6.50€</p>
+                    <div id="desc7" class="descripcion">
+                        <p>Tofu frito en panecillo al vapor con una salsa especial.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -130,5 +151,29 @@
 
     <!-- Bootstrap Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        let timeoutActivo;
+
+        function mostrarDescripcion(id) {
+            // Ocultar todas las descripciones
+            const descripciones = document.querySelectorAll('.descripcion');
+            descripciones.forEach(desc => desc.style.display = 'none');
+
+            // Limpiar el temporizador anterior si existe
+            if (timeoutActivo) clearTimeout(timeoutActivo);
+
+            // Mostrar la nueva descripción
+            const seleccionada = document.getElementById('desc' + id);
+            if (seleccionada) {
+                seleccionada.style.display = 'block';
+
+                // Ocultar después de 5 segundos
+                timeoutActivo = setTimeout(() => {
+                    seleccionada.style.display = 'none';
+                }, 3000);
+            }
+        }
+    </script>
 </body>
 </html>
