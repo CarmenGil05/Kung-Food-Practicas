@@ -1,7 +1,7 @@
 
 @font-face {
     font-family: 'Sigokae';
-    src: url('fonts/Sigokae Demo.ttf') format('truetype');
+    src: url('../fonts/Sigokae Demo.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
