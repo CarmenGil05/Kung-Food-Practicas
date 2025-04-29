@@ -69,6 +69,19 @@ body {
     margin: 30px 20px 10px;
 }
 
+h5{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    color: #d62728;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.text-muted{
+    text-align: center;
+    font-weight: bold;
+}
+
 hr {
     border: none;
     height: 3px;
