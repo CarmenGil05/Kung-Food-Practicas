@@ -156,3 +156,9 @@ footer {
 .cuadro-enlaces ul li a:hover {
     color: #d62728;
 }
+.descripcion-temporal {
+            margin-top: 10px;
+            color: #555;
+            font-size: 0.95rem;
+            transition: opacity 0.3s ease;
+        }
