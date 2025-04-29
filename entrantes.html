@@ -1,134 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kung Food</title>
-
-    <!-- Vincular Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Vincular tu CSS personalizado -->
-    <link rel="stylesheet" href="entrantes.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kung Food</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="entrantes.css" />
 </head>
 <body>
 
-    <!-- Navegación simple -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">Kung Food</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="inicio.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="entrantes.html">Carta</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="reservas.html">Reservar</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+<!-- Navegación -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Kung Food</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="inicio.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="entrantes.html">Carta</a></li>
+        <li class="nav-item"><a class="nav-link" href="reservas.html">Reservar</a></li>
+        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-    <div class="cuadro-enlaces">
-        <h2>Explora más</h2>
-        <ul>
-          <li><a href="entrantes.html">Entrantes</a></li>
-          <li><a href="principal.html">Principales</a></li>
-          <li><a href="postres.html">Postres</a></li>
-        </ul>
+<div class="cuadro-enlaces">
+  <h2>Explora más</h2>
+  <ul>
+    <li><a href="entrantes.html">Entrantes</a></li>
+    <li><a href="principal.html">Principales</a></li>
+    <li><a href="postres.html">Postres</a></li>
+  </ul>
+</div>
+
+<!-- Entrantes -->
+<section id="entrantes" class="container my-5">
+  <div class="row">
+    <h2 class="tituloentrantes">Entrantes</h2>
+
+    <!-- Entrantes con enlaces -->
+    <div class="col-md-4 text-center mb-4">
+      <div class="plato">
+        <a href="#desc1">
+          <img src="img/carta/entrantes/Bao_pollo.jpeg" alt="Bao de pollo frito" class="img-fluid">
+        </a>
+        <h4>Bao de Pollo Frito</h4>
+        <p>Precio: 6.50€</p>
       </div>
-      
+    </div>
 
-    <!-- Sección de Entrantes -->
-    <section id="entrantes" class="container my-5">
-        <div class="row">
-            <h2 class="tituloentrantes">Entrantes</h2>
+    <div class="col-md-4 text-center mb-4">
+      <div class="plato">
+        <a href="#desc2">
+          <img src="img/carta/entrantes/Rollitos_de_primavera.jpeg" alt="Rollitos de primavera" class="img-fluid">
+        </a>
+        <h4>Rollitos de primavera</h4>
+        <p>Precio: 5.00€</p>
+      </div>
+    </div>
 
-            <!-- Primer Entrante -->
-            <div class="col-md-4 text-center mb-4">
-                <div class="plato">
-                    <img src="img/carta/entrantes/Bao_pollo.jpeg" alt="Bao de pollo frito" class="img-fluid">
-                    <h4>Bao de Pollo Frito</h4>
-                    <p>Precio: 6.50€</p>
-                </div>
-            </div>
+    <div class="col-md-4 text-center mb-4">
+      <div class="plato">
+        <a href="#desc3">
+          <img src="img/carta/entrantes/Pollo-teriyaki.jpeg" alt="Pollo Teriyaki" class="img-fluid">
+        </a>
+        <h4>Pollo Teriyaki</h4>
+        <p>Precio: 7.00€</p>
+      </div>
+    </div>
 
-            <!-- Segundo Entrante -->
-            <div class="col-md-4 text-center mb-4">
-                <div class="plato">
-                    <img src="img/carta/entrantes/Rollitos_de_primavera.jpeg" alt="Segundo entrante" class="img-fluid">
-                    <h4>Rollitos de primavera</h4>
-                    <p>Precio: 5.00€</p>
-                </div>
-            </div>
+    <div class="col-md-4 text-center mb-4">
+      <div class="plato">
+        <a href="#desc4">
+          <img src="img/carta/entrantes/Gyozas.jpeg" alt="Gyozas" class="img-fluid">
+        </a>
+        <h4>Gyozas</h4>
+        <p>Precio: 4.50€</p>
+      </div>
+    </div>
 
-            <!-- Tercer Entrante -->
-            <div class="col-md-4 text-center mb-4">
-                <div class="plato">
-                    <img src="img/carta/entrantes/Pollo-teriyaki.jpeg" alt="Tercer entrante" class="img-fluid">
-                    <h4>Pollo Teriyaki</h4>
-                    <p>Precio: 7.00€</p>
-                </div>
-            </div>
+    <div class="col-md-4 text-center mb-4">
+      <div class="plato">
+        <a href="#desc5">
+          <img src="img/carta/entrantes/Edamame.jpeg" alt="Edamame" class="img-fluid">
+        </a>
+        <h4>Edamame</h4>
+        <p>Precio: 5.25€</p>
+      </div>
+    </div>
 
-            <!-- Cuarto Entrante -->
-            <div class="col-md-4 text-center mb-4">
-                <div class="plato">
-                    <img src="img/carta/entrantes/Gyozas.jpeg" alt="Cuarto entrante" class="img-fluid">
-                    <h4>Gyozas</h4>
-                    <p>Precio: 4.50€</p>
-                </div>
-            </div>
+    <div class="col-md-4 text-center mb-4">
+      <div class="plato">
+        <a href="#desc6">
+          <img src="img/carta/entrantes/Bao_vegetariano.jpeg" alt="Bao Vegetariano" class="img-fluid">
+        </a>
+        <h4>Bao Vegetariano</h4>
+        <p>Precio: 6€</p>
+      </div>
+    </div>
 
-            
-            <!-- Quinto Entrante -->
-            <div class="col-md-4 text-center mb-4">
-                <div class="plato">
-                    <img src="img/carta/entrantes/Edamame.jpeg" alt="Quinto entrante" class="img-fluid">
-                    <h4>Edamame</h4>
-                    <p>Precio: 5.25€</p>
-                </div>
-            </div>
-            
-            <!-- Sexto Entrante -->
-             <div class="col-md-4 text-center mb-4">
-                <div class="plato">
-                    <img src="img/carta/entrantes/Bao_vegetariano.jpeg" alt="Sexto entrante" class="img-fluid">
-                    <h4>Bao Vegetariano</h4>
-                    <p>Precio: 6€</p>
-                </div>
-            </div>
+    <div class="col-md-4 text-center mb-4">
+      <div class="plato">
+        <a href="#desc7">
+          <img src="img/carta/entrantes/Bao_tofu.jpeg" alt="Bao Tofu" class="img-fluid">
+        </a>
+        <h4>Bao Tofu</h4>
+        <p>Precio: 6.50€</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-            <!-- Septimo Entrante -->
-              <div class="col-md-4 text-center mb-4">
-                <div class="plato">
-                    <img src="img/carta/entrantes/Bao_tofu.jpeg" alt="Septimo entrante" class="img-fluid">
-                    <h4>Bao Tofu</h4>
-                    <p>Precio: 6.50€</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- Sección de Descripciones -->
+<section class="container my-5">
+  <h3>Descripción de los platos</h3>
+  <div id="desc1"><h5>Bao de Pollo Frito</h5><p>Panecillo al vapor relleno de pollo crujiente, salsa hoisin y encurtidos.</p></div>
+  <div id="desc2"><h5>Rollitos de primavera</h5><p>Crujientes rollitos rellenos de verduras y fideos de arroz, acompañados de salsa agridulce.</p></div>
+  <div id="desc3"><h5>Pollo Teriyaki</h5><p>Trozos de pollo caramelizados en una salsa teriyaki casera, servidos con semillas de sésamo.</p></div>
+  <div id="desc4"><h5>Gyozas</h5><p>Empanadillas japonesas rellenas de carne y verduras, ligeramente doradas.</p></div>
+  <div id="desc5"><h5>Edamame</h5><p>Vainas de soja hervidas con sal marina, un aperitivo simple y nutritivo.</p></div>
+  <div id="desc6"><h5>Bao Vegetariano</h5><p>Bao al vapor con tofu, verduras salteadas y salsa de maní.</p></div>
+  <div id="desc7"><h5>Bao Tofu</h5><p>Tofu marinado y crujiente dentro de un bao suave, con cebolla encurtida y salsa dulce.</p></div>
+</section>
 
-    <!-- Pie de página -->
-    <footer>
-        <div class="pie_de_pagina">
-            <p class="frase-pie">"En Kung Food el sabor es tu maestro"</p>
-            <p>Copyright © 2025 - Kung Food</p>
-        </div>
-    </footer>
+<!-- Footer -->
+<footer>
+  <div class="pie_de_pagina">
+    <p class="frase-pie">"En Kung Food el sabor es tu maestro"</p>
+    <p>Copyright © 2025 - Kung Food</p>
+  </div>
+</footer>
 
-    <!-- Bootstrap Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
