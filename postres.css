@@ -156,9 +156,13 @@ footer {
 .cuadro-enlaces ul li a:hover {
     color: #d62728;
 }
-.descripcion-temporal {
+.descripcion {
+            display: none;
             margin-top: 10px;
-            color: #555;
-            font-size: 0.95rem;
-            transition: opacity 0.3s ease;
+            background-color: #f8f9fa;
+            padding: 10px;
+            border-radius: 5px;
+        }
+.plato img {
+            cursor: pointer;
         }
