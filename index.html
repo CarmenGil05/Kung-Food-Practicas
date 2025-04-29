@@ -1,17 +1,18 @@
-<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <link rel="icon" href="img/logo/icon.png" type="image/png">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kung Food - Restaurante</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="CSS-Kung-Food.css" rel="stylesheet">
- 
+    <meta charset="UTF-8">
+    <link rel="icon" href="img/logo/icon.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kung Food - Restaurante</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS básico -->
+
+    <link href="CSS-Kung-Food.css" rel="stylesheet">
+
 </head>
 <body>
-
-  <!-- Navegación simple -->
+    <!-- Navegación simple -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand" href="index.html">Kung Food</a>
@@ -48,149 +49,159 @@
         </div>
     </header>
 
-  <!-- Entrantes -->
-  <div id="carruselEntrantes" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <h2 class="titulos-carta">Entrantes</h2>
-      <hr>
-      <div class="carousel-item active">
-        <div class="row">
-          <div class="col-4">
-            <img src="img/carta/entrantes/Bao_pollo.jpeg" class="d-block w-100" alt="Bao de Pollo" onclick="mostrarDescripcion('descEntrantes', 'Bao de pollo marinado con salsa hoisin.')">
+      <!-- Entrantes -->
+    <div id="carruselEntrantes" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+  <h2 class="titulos-carta">Entrantes</h2>
+  <hr>
+            <div class="carousel-item active">
+            <div class="row">
+              <div class="col-4">
+                <img src="img/carta/entrantes/Bao_pollo.jpeg" class="d-block w-100" alt="Entrante 1">
+              </div>
+              <div class="col-4">
+                <img src="img/carta/entrantes/Bao_tofu.jpeg" class="d-block w-100" alt="Entrante 2">
+              </div>
+              <div class="col-4">
+                <img src="img/carta/entrantes/Bao_vegetariano.jpeg" class="d-block w-100" alt="Entrante 3">
+              </div>
+            </div>
           </div>
-          <div class="col-4">
-            <img src="img/carta/entrantes/Bao_tofu.jpeg" class="d-block w-100" alt="Bao de Tofu" onclick="mostrarDescripcion('descEntrantes', 'Bao relleno de tofu crujiente y verduras frescas.')">
+      
+          <!-- Segundo grupo de 3 imágenes (puedes repetir u otras imágenes) -->
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-4">
+                <img src="img/carta/entrantes/Edamame.jpeg" class="d-block w-100" alt="Entrante 4">
+              </div>
+              <div class="col-4">
+                <img src="img/carta/entrantes/Gyozas.jpeg" class="d-block w-100" alt="Entrante 5">
+              </div>
+              <div class="col-4">
+                <img src="img/carta/entrantes/Pollo-teriyaki.jpeg" class="d-block w-100" alt="Entrante 6">
+              </div>
+            </div>
           </div>
-          <div class="col-4">
-            <img src="img/carta/entrantes/Bao_vegetariano.jpeg" class="d-block w-100" alt="Bao Vegetariano" onclick="mostrarDescripcion('descEntrantes', 'Versión vegetariana con setas y zanahoria encurtida.')">
-          </div>
+      
         </div>
+      
+        <!-- Controles -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carruselEntrantes" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+      
+        <button class="carousel-control-next" type="button" data-bs-target="#carruselEntrantes" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
       </div>
-      <div class="carousel-item">
-        <div class="row">
-          <div class="col-4">
-            <img src="img/carta/entrantes/Edamame.jpeg" class="d-block w-100" alt="Edamame" onclick="mostrarDescripcion('descEntrantes', 'Vainas de soja hervidas con sal marina.')">
-          </div>
-          <div class="col-4">
-            <img src="img/carta/entrantes/Gyozas.jpeg" class="d-block w-100" alt="Gyozas" onclick="mostrarDescripcion('descEntrantes', 'Empanadillas japonesas de cerdo y verduras.')">
-          </div>
-          <div class="col-4">
-            <img src="img/carta/entrantes/Pollo-teriyaki.jpeg" class="d-block w-100" alt="Pollo Teriyaki" onclick="mostrarDescripcion('descEntrantes', 'Tiras de pollo glaseadas en salsa teriyaki.')">
-          </div>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carruselEntrantes" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Anterior</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carruselEntrantes" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Siguiente</span>
-    </button>
-    <p id="descEntrantes" class="descripcion-plato"></p>
-  </div>
 
   <!-- Principales -->
-  <div id="carruselPrimeros" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <h2 class="titulos-carta">Principales</h2>
-      <hr>
-      <div class="carousel-item active">
-        <div class="row">
-          <div class="col-4">
-            <img src="img/carta/principales/Arroz-FRITO.jpeg" class="d-block w-100" alt="Arroz Frito" onclick="mostrarDescripcion('descPrincipales', 'Arroz salteado con huevo, verduras y soja.')">
+      <div id="carruselPrimeros" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+  <h2 class="titulos-carta">Principales</h2>
+  <hr>
+            <div class="carousel-item active">
+            <div class="row">
+              <div class="col-4">
+                <img src="img/carta/principales/Arroz-FRITO.jpeg" class="d-block w-100" alt="Entrante 1">
+              </div>
+              <div class="col-4">
+                <img src="img/carta/principales/Arroz_pato.jpeg" class="d-block w-100" alt="Entrante 2">
+              </div>
+              <div class="col-4">
+                <img src="img/carta/principales/Tonkatsu.jpeg" class="d-block w-100" alt="Entrante 3">
+              </div>
+            </div>
           </div>
-          <div class="col-4">
-            <img src="img/carta/principales/Arroz_pato.jpeg" class="d-block w-100" alt="Arroz con Pato" onclick="mostrarDescripcion('descPrincipales', 'Arroz jazmín con pato crujiente y especias.')">
+      
+          <!-- Segundo grupo de 3 imágenes (puedes repetir u otras imágenes) -->
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-4">
+                <img src="img/carta/principales/Noodles.jpeg" class="d-block w-100" alt="Entrante 4">
+              </div>
+              <div class="col-4">
+                <img src="img/carta/principales/Sushi.jpeg" class="d-block w-100" alt="Entrante 5">
+              </div>
+              <div class="col-4">
+                <img src="img/carta/principales/Yakisoba-ramen.jpeg" class="d-block w-100" alt="Entrante 6">
+              </div>
+            </div>
           </div>
-          <div class="col-4">
-            <img src="img/carta/principales/Tonkatsu.jpeg" class="d-block w-100" alt="Tonkatsu" onclick="mostrarDescripcion('descPrincipales', 'Chuleta de cerdo empanada con salsa tonkatsu.')">
-          </div>
+      
         </div>
+      
+        <!-- Controles -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carruselEntrantes" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+      
+        <button class="carousel-control-next" type="button" data-bs-target="#carruselEntrantes" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
       </div>
-      <div class="carousel-item">
-        <div class="row">
-          <div class="col-4">
-            <img src="img/carta/principales/Noodles.jpeg" class="d-block w-100" alt="Noodles" onclick="mostrarDescripcion('descPrincipales', 'Fideos salteados con verduras y soja.')">
+
+<!-- Postres -->
+      <div id="carruselPostres" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+  <h2 class="titulos-carta">Postres</h2>
+  <hr>
+            <div class="carousel-item active">
+            <div class="row">
+              <div class="col-4">
+                <img src="img/carta/postres/CheeseCake-Fresa.jpeg" class="d-block w-100" alt="Entrante 1">
+              </div>
+              <div class="col-4">
+                <img src="img/carta/postres/CheeseCake-Oreo.jpeg" class="d-block w-100" alt="Entrante 2">
+              </div>
+              <div class="col-4">
+                <img src="img/carta/postres/Mochi.jpeg" class="d-block w-100" alt="Entrante 3">
+              </div>
+            </div>
           </div>
-          <div class="col-4">
-            <img src="img/carta/principales/Sushi.jpeg" class="d-block w-100" alt="Sushi" onclick="mostrarDescripcion('descPrincipales', 'Selección de sushi fresco: nigiris, makis y más.')">
+      
+          <!-- Segundo grupo de 3 imágenes (puedes repetir u otras imágenes) -->
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-4">
+                <img src="img/carta/postres/Dorayaki.jpeg" class="d-block w-100" alt="Entrante 4">
+              </div>
+              <div class="col-4">
+                <img src="img/carta/postres/Mooncake.jpeg" class="d-block w-100" alt="Entrante 5">
+              </div>
+              <div class="col-4">
+                <img src="img/carta/postres/taiyaki.jpeg" class="d-block w-100" alt="Entrante 6">
+              </div>
+            </div>
           </div>
-          <div class="col-4">
-            <img src="img/carta/principales/Yakisoba-ramen.jpeg" class="d-block w-100" alt="Yakisoba Ramen" onclick="mostrarDescripcion('descPrincipales', 'Fideos con salsa yakisoba y vegetales.')">
-          </div>
+      
         </div>
+      
+        <!-- Controles -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carruselEntrantes" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+      
+        <button class="carousel-control-next" type="button" data-bs-target="#carruselEntrantes" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
       </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carruselPrimeros" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Anterior</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carruselPrimeros" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Siguiente</span>
-    </button>
-    <p id="descPrincipales" class="descripcion-plato"></p>
-  </div>
-
-  <!-- Postres -->
-  <div id="carruselPostres" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <h2 class="titulos-carta">Postres</h2>
-      <hr>
-      <div class="carousel-item active">
-        <div class="row">
-          <div class="col-4">
-            <img src="img/carta/postres/CheeseCake-Fresa.jpeg" class="d-block w-100" alt="Cheesecake Fresa" onclick="mostrarDescripcion('descPostres', 'Tarta de queso cremosa con mermelada de fresa.')">
-          </div>
-          <div class="col-4">
-            <img src="img/carta/postres/CheeseCake-Oreo.jpeg" class="d-block w-100" alt="Cheesecake Oreo" onclick="mostrarDescripcion('descPostres', 'Cheesecake con base y topping de Oreo.')">
-          </div>
-          <div class="col-4">
-            <img src="img/carta/postres/Mochi.jpeg" class="d-block w-100" alt="Mochi" onclick="mostrarDescripcion('descPostres', 'Bola de arroz japonés rellena de helado.')">
-          </div>
+      
+    <footer>
+        <div class="pie_de_pagina">
+            <p class="frase-pie">"En Kung Food el sabor es tu maestro"</p>
+            <p>Copyright © 2025 - Kung Food</p>
         </div>
-      </div>
-      <div class="carousel-item">
-        <div class="row">
-          <div class="col-4">
-            <img src="img/carta/postres/Dorayaki.jpeg" class="d-block w-100" alt="Dorayaki" onclick="mostrarDescripcion('descPostres', 'Bizcochos rellenos de pasta dulce de judía roja.')">
-          </div>
-          <div class="col-4">
-            <img src="img/carta/postres/Mooncake.jpeg" class="d-block w-100" alt="Mooncake" onclick="mostrarDescripcion('descPostres', 'Pastel relleno tradicional del festival lunar.')">
-          </div>
-          <div class="col-4">
-            <img src="img/carta/postres/taiyaki.jpeg" class="d-block w-100" alt="Taiyaki" onclick="mostrarDescripcion('descPostres', 'Pastel japonés con forma de pez relleno.')">
-          </div>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carruselPostres" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Anterior</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carruselPostres" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Siguiente</span>
-    </button>
-    <p id="descPostres" class="descripcion-plato"></p>
-  </div>
+    </footer>
 
-  <!-- Footer -->
-  <footer class="mt-5 text-center">
-    <p class="frase-pie">"En Kung Food el sabor es tu maestro"</p>
-    <p>&copy; 2025 - Kung Food</p>
-  </footer>
-
-  <!-- Scripts -->
-  <script>
-    function mostrarDescripcion(idElemento, texto) {
-      document.getElementById(idElemento).textContent = texto;
-    }
-  </script>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
