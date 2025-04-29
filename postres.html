@@ -10,6 +10,16 @@
 
     <!-- Vincular tu CSS personalizado -->
     <link rel="stylesheet" href="postres.css">
+
+    <style>
+        .descripcion {
+            display: none;
+            margin-top: 10px;
+            color: #555;
+            font-size: 0.95rem;
+            transition: opacity 0.3s ease;
+        }
+    </style>
 </head>
 <body>
 
@@ -22,18 +32,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="inicio.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="entrantes.html">Carta</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="reservas.html">Reservar</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="inicio.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="entrantes.html">Carta</a></li>
+                    <li class="nav-item"><a class="nav-link" href="reservas.html">Reservar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
                 </ul>
             </div>
         </div>
@@ -42,87 +44,87 @@
     <div class="cuadro-enlaces">
         <h2>Explora más</h2>
         <ul>
-          <li><a href="entrantes.html">Entrantes</a></li>
-          <li><a href="principal.html">Principales</a></li>
-          <li><a href="postres.html">Postres</a></li>
+            <li><a href="entrantes.html">Entrantes</a></li>
+            <li><a href="principal.html">Principales</a></li>
+            <li><a href="postres.html">Postres</a></li>
         </ul>
-      </div>
+    </div>
 
-    <!-- Sección de Entrantes -->
+    <!-- Sección de Postres -->
     <section id="entrantes" class="container my-5">
         <div class="row">
             <h2 class="tituloentrantes">Postres</h2>
 
-            <!-- Primer Entrante -->
+            <!-- Cada postre con su imagen y descripción -->
             <div class="col-md-4 text-center mb-4">
                 <div class="plato">
-                    <img src="img/carta/postres/CheeseCake-Cacahuete.jpeg" alt="Bao de pollo frito" class="img-fluid">
+                    <img src="img/carta/postres/CheeseCake-Cacahuete.jpeg" alt="Cheesecake de cacahuete" class="img-fluid" onclick="mostrarDescripcion(1)">
                     <h4>CheeseCake-Cacahuete</h4>
                     <p>Precio: 4.50€</p>
+                    <div id="desc1" class="descripcion">Cheesecake con base de galleta y crema de cacahuete.</div>
                 </div>
             </div>
 
-            <!-- Segundo Entrante -->
             <div class="col-md-4 text-center mb-4">
                 <div class="plato">
-                    <img src="img/carta/postres/CheeseCake-Fresa.jpeg" alt="Segundo entrante" class="img-fluid">
+                    <img src="img/carta/postres/CheeseCake-Fresa.jpeg" alt="Cheesecake de fresa" class="img-fluid" onclick="mostrarDescripcion(2)">
                     <h4>CheeseCake-Fresa</h4>
                     <p>Precio: 4.00€</p>
+                    <div id="desc2" class="descripcion">Cheesecake con cobertura de mermelada de fresa natural.</div>
                 </div>
             </div>
 
-            <!-- Tercer Entrante -->
             <div class="col-md-4 text-center mb-4">
                 <div class="plato">
-                    <img src="img/carta/postres/CheeseCake-Oreo.jpeg" alt="Tercer entrante" class="img-fluid">
+                    <img src="img/carta/postres/CheeseCake-Oreo.jpeg" alt="Cheesecake de Oreo" class="img-fluid" onclick="mostrarDescripcion(3)">
                     <h4>CheeseCake-Oreo</h4>
                     <p>Precio: 3.50€</p>
+                    <div id="desc3" class="descripcion">Cheesecake con trozos de galleta Oreo en su interior.</div>
                 </div>
             </div>
 
-            <!-- Cuarto Entrante -->
             <div class="col-md-4 text-center mb-4">
                 <div class="plato">
-                    <img src="img/carta/postres/Dorayaki.jpeg" alt="Cuarto entrante" class="img-fluid">
+                    <img src="img/carta/postres/Dorayaki.jpeg" alt="Dorayaki" class="img-fluid" onclick="mostrarDescripcion(4)">
                     <h4>Dorayaki</h4>
                     <p>Precio: 3.50€</p>
+                    <div id="desc4" class="descripcion">Pastel japonés relleno de anko (pasta de judía dulce).</div>
                 </div>
             </div>
 
-            
-            <!-- Quinto Entrante -->
             <div class="col-md-4 text-center mb-4">
                 <div class="plato">
-                    <img src="img/carta/postres/Mochi.jpeg" alt="Quinto entrante" class="img-fluid">
+                    <img src="img/carta/postres/Mochi.jpeg" alt="Mochi" class="img-fluid" onclick="mostrarDescripcion(5)">
                     <h4>Mochi</h4>
                     <p>Precio: 3.50€</p>
+                    <div id="desc5" class="descripcion">Dulce japonés de arroz glutinoso con rellenos variados.</div>
                 </div>
             </div>
-            
-            <!-- Sexto Entrante -->
-             <div class="col-md-4 text-center mb-4">
+
+            <div class="col-md-4 text-center mb-4">
                 <div class="plato">
-                    <img src="img/carta/postres/Mooncake.jpeg" alt="Sexto entrante" class="img-fluid">
+                    <img src="img/carta/postres/Mooncake.jpeg" alt="Mooncake" class="img-fluid" onclick="mostrarDescripcion(6)">
                     <h4>Mooncake</h4>
                     <p>Precio: 4.50€</p>
+                    <div id="desc6" class="descripcion">Pastel tradicional chino del festival de la luna.</div>
                 </div>
             </div>
 
-            <!-- Septimo Entrante -->
-              <div class="col-md-4 text-center mb-4">
+            <div class="col-md-4 text-center mb-4">
                 <div class="plato">
-                    <img src="img/carta/postres/Postre-Matcha.jpeg" alt="Septimo entrante" class="img-fluid">
+                    <img src="img/carta/postres/Postre-Matcha.jpeg" alt="Postre de Matcha" class="img-fluid" onclick="mostrarDescripcion(7)">
                     <h4>Postre-Matcha</h4>
                     <p>Precio: 5€</p>
+                    <div id="desc7" class="descripcion">Postre suave con té verde matcha y crema batida.</div>
                 </div>
             </div>
 
-            <!-- Septimo Entrante -->
-             <div class="col-md-4 text-center mb-4">
+            <div class="col-md-4 text-center mb-4">
                 <div class="plato">
-                    <img src="img/carta/postres/taiyaki.jpeg" alt="Septimo entrante" class="img-fluid">
+                    <img src="img/carta/postres/taiyaki.jpeg" alt="Taiyaki" class="img-fluid" onclick="mostrarDescripcion(8)">
                     <h4>Taiyaki</h4>
                     <p>Precio: 4.50€</p>
+                    <div id="desc8" class="descripcion">Pastel japonés con forma de pez, relleno de anko o crema.</div>
                 </div>
             </div>
         </div>
@@ -130,13 +132,33 @@
 
     <!-- Pie de página -->
     <footer>
-        <div class="pie_de_pagina">
-            <p class="frase-pie">"En Kung Food el sabor es tu maestro"</p>
-            <p>Copyright © 2025 - Kung Food</p>
+        <div class="pie_de_pagina text-center py-3 bg-light">
+            <p class="frase-pie mb-1">"En Kung Food el sabor es tu maestro"</p>
+            <p class="mb-0">Copyright © 2025 - Kung Food</p>
         </div>
     </footer>
 
     <!-- Bootstrap Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Script para mostrar y ocultar descripciones -->
+    <script>
+        let timeoutActivo;
+
+        function mostrarDescripcion(id) {
+            const descripciones = document.querySelectorAll('.descripcion');
+            descripciones.forEach(desc => desc.style.display = 'none');
+
+            if (timeoutActivo) clearTimeout(timeoutActivo);
+
+            const seleccionada = document.getElementById('desc' + id);
+            if (seleccionada) {
+                seleccionada.style.display = 'block';
+                timeoutActivo = setTimeout(() => {
+                    seleccionada.style.display = 'none';
+                }, 3000);
+            }
+        }
+    </script>
 </body>
 </html>
