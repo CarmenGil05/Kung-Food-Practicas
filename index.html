@@ -1,103 +1,112 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <link rel="icon" href="img/logo/icon.png" type="image/png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kung Food - Restaurante</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="CSS-Kung-Food.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Kung Food - Carta</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Navegación -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">Kung Food</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="inicio.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="entrantes.html">Carta</a></li>
-                    <li class="nav-item"><a class="nav-link" href="reservas.html">Reservar</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
 
-    <!-- Cabecera -->
-    <header id="inicio">
-        <div class="container text-center">
-            <img src="img/logo/Logo Restaurante Asiático Moderno Rojo y Negro.png" alt="Kung Food Logo" class="logo mb-3">
-            <h1 class="titulo-principal">Kung Food</h1>
-            <p class="lema">Sabores que pelean por tu atención</p>
-        </div>
-    </header>
+  <div class="container mt-5">
+    <h1 class="text-center">Kung Food - Carta</h1>
 
     <!-- Entrantes -->
-    <div class="container mt-5">
-        <h2 class="titulos-carta">Entrantes</h2>
-        <hr>
-        <div class="row">
-            <div class="col-md-4">
-                <img src="img/carta/entrantes/Bao_pollo.jpeg" class="img-fluid rounded" alt="Bao Pollo"
-                    data-bs-toggle="modal" data-bs-target="#descripcionModal"
-                    data-titulo="Bao de Pollo"
-                    data-descripcion="Panecillo al vapor relleno de pollo marinado con salsa hoisin y encurtidos.">
-            </div>
-            <div class="col-md-4">
-                <img src="img/carta/entrantes/Bao_tofu.jpeg" class="img-fluid rounded" alt="Bao Tofu"
-                    data-bs-toggle="modal" data-bs-target="#descripcionModal"
-                    data-titulo="Bao de Tofu"
-                    data-descripcion="Panecillo relleno de tofu crujiente, pepino y mayonesa de sésamo.">
-            </div>
-            <div class="col-md-4">
-                <img src="img/carta/entrantes/Bao_vegetariano.jpeg" class="img-fluid rounded" alt="Bao Vegetariano"
-                    data-bs-toggle="modal" data-bs-target="#descripcionModal"
-                    data-titulo="Bao Vegetariano"
-                    data-descripcion="Opción vegana con setas salteadas, cebolla morada y zanahoria rallada.">
-            </div>
-        </div>
+    <h2 class="mt-5">Entrantes</h2>
+    <div class="row">
+      <div class="col-md-4 text-center">
+        <img src="img/carta/entrantes/Bao_pollo.jpeg" class="img-fluid rounded" alt="Bao de Pollo">
+        <p><strong>Bao de Pollo:</strong> Panecillo al vapor con pollo marinado, salsa hoisin y encurtidos.</p>
+      </div>
+      <div class="col-md-4 text-center">
+        <img src="img/carta/entrantes/Bao_tofu.jpeg" class="img-fluid rounded" alt="Bao de Tofu">
+        <p><strong>Bao de Tofu:</strong> Bao relleno de tofu crujiente, pepino y mayonesa de sésamo.</p>
+      </div>
+      <div class="col-md-4 text-center">
+        <img src="img/carta/entrantes/Bao_vegetariano.jpeg" class="img-fluid rounded" alt="Bao Vegetariano">
+        <p><strong>Bao Vegetariano:</strong> Relleno de setas salteadas, cebolla morada y zanahoria.</p>
+      </div>
+
+      <div class="col-md-4 text-center mt-4">
+        <img src="img/carta/entrantes/Edamame.jpeg" class="img-fluid rounded" alt="Edamame">
+        <p><strong>Edamame:</strong> Vainas de soja cocidas y saladas, perfectas para picar.</p>
+      </div>
+      <div class="col-md-4 text-center mt-4">
+        <img src="img/carta/entrantes/Gyozas.jpeg" class="img-fluid rounded" alt="Gyozas">
+        <p><strong>Gyozas:</strong> Empanadillas japonesas rellenas de cerdo y verduras, al vapor y doradas.</p>
+      </div>
+      <div class="col-md-4 text-center mt-4">
+        <img src="img/carta/entrantes/Pollo-teriyaki.jpeg" class="img-fluid rounded" alt="Pollo Teriyaki">
+        <p><strong>Pollo Teriyaki:</strong> Tiras de pollo salteadas en salsa teriyaki con sésamo.</p>
+      </div>
     </div>
 
-    <!-- Modal de descripción -->
-    <div class="modal fade" id="descripcionModal" tabindex="-1" aria-labelledby="descripcionModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="descripcionModalLabel">Título del Plato</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-                </div>
-                <div class="modal-body">
-                    Aquí va la descripción del plato.
-                </div>
-            </div>
-        </div>
+    <!-- Principales -->
+    <h2 class="mt-5">Platos Principales</h2>
+    <div class="row">
+      <div class="col-md-4 text-center">
+        <img src="img/carta/principales/Arroz-FRITO.jpeg" class="img-fluid rounded" alt="Arroz Frito">
+        <p><strong>Arroz Frito:</strong> Arroz salteado con verduras, huevo y salsa de soja.</p>
+      </div>
+      <div class="col-md-4 text-center">
+        <img src="img/carta/principales/Arroz_pato.jpeg" class="img-fluid rounded" alt="Arroz con Pato">
+        <p><strong>Arroz con Pato:</strong> Arroz jazmín acompañado de pato crujiente y especias asiáticas.</p>
+      </div>
+      <div class="col-md-4 text-center">
+        <img src="img/carta/principales/Tonkatsu.jpeg" class="img-fluid rounded" alt="Tonkatsu">
+        <p><strong>Tonkatsu:</strong> Chuleta de cerdo empanada estilo japonés con salsa agridulce.</p>
+      </div>
+
+      <div class="col-md-4 text-center mt-4">
+        <img src="img/carta/principales/Noodles.jpeg" class="img-fluid rounded" alt="Noodles">
+        <p><strong>Noodles:</strong> Fideos salteados con verduras y proteína a elección.</p>
+      </div>
+      <div class="col-md-4 text-center mt-4">
+        <img src="img/carta/principales/Sushi.jpeg" class="img-fluid rounded" alt="Sushi Variado">
+        <p><strong>Sushi Variado:</strong> Selección de makis, nigiris y uramakis frescos.</p>
+      </div>
+      <div class="col-md-4 text-center mt-4">
+        <img src="img/carta/principales/Yakisoba-ramen.jpeg" class="img-fluid rounded" alt="Yakisoba Ramen">
+        <p><strong>Yakisoba Ramen:</strong> Fideos japoneses con salsa yakisoba y verduras.</p>
+      </div>
     </div>
 
-    <!-- Footer -->
-    <footer class="mt-5 text-center">
-        <div class="pie_de_pagina">
-            <p class="frase-pie">"En Kung Food el sabor es tu maestro"</p>
-            <p>Copyright © 2025 - Kung Food</p>
-        </div>
-    </footer>
+    <!-- Postres -->
+    <h2 class="mt-5">Postres</h2>
+    <div class="row">
+      <div class="col-md-4 text-center">
+        <img src="img/carta/postres/CheeseCake-Fresa.jpeg" class="img-fluid rounded" alt="Cheesecake de Fresa">
+        <p><strong>Cheesecake de Fresa:</strong> Tarta de queso suave con cobertura de fresa natural.</p>
+      </div>
+      <div class="col-md-4 text-center">
+        <img src="img/carta/postres/CheeseCake-Oreo.jpeg" class="img-fluid rounded" alt="Cheesecake de Oreo">
+        <p><strong>Cheesecake de Oreo:</strong> Tarta de queso con base y topping de galleta Oreo.</p>
+      </div>
+      <div class="col-md-4 text-center">
+        <img src="img/carta/postres/Mochi.jpeg" class="img-fluid rounded" alt="Mochi">
+        <p><strong>Mochi:</strong> Dulce japonés de arroz glutinoso relleno de helado.</p>
+      </div>
 
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        const modal = document.getElementById('descripcionModal');
-        modal.addEventListener('show.bs.modal', event => {
-            const trigger = event.relatedTarget;
-            const titulo = trigger.getAttribute('data-titulo');
-            const descripcion = trigger.getAttribute('data-descripcion');
+      <div class="col-md-4 text-center mt-4">
+        <img src="img/carta/postres/Dorayaki.jpeg" class="img-fluid rounded" alt="Dorayaki">
+        <p><strong>Dorayaki:</strong> Bizcochos rellenos de pasta dulce de judía roja (anko).</p>
+      </div>
+      <div class="col-md-4 text-center mt-4">
+        <img src="img/carta/postres/Mooncake.jpeg" class="img-fluid rounded" alt="Mooncake">
+        <p><strong>Mooncake:</strong> Pastel tradicional relleno de pasta dulce, típico del festival lunar.</p>
+      </div>
+      <div class="col-md-4 text-center mt-4">
+        <img src="img/carta/postres/taiyaki.jpeg" class="img-fluid rounded" alt="Taiyaki">
+        <p><strong>Taiyaki:</strong> Pastel en forma de pez relleno de crema o anko.</p>
+      </div>
+    </div>
+  </div>
 
-            modal.querySelector('.modal-title').textContent = titulo;
-            modal.querySelector('.modal-body').textContent = descripcion;
-        });
-    </script>
+  <footer class="mt-5 text-center">
+    <p class="frase-pie">"En Kung Food el sabor es tu maestro"</p>
+    <p>&copy; 2025 - Kung Food</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
