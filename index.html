@@ -2,111 +2,168 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Kung Food - Carta</title>
+  <link rel="icon" href="img/logo/icon.png" type="image/png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kung Food - Restaurante</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="CSS-Kung-Food.css" rel="stylesheet">
+  <style>
+    .descripcion-plato {
+      margin-top: 10px;
+      font-style: italic;
+      font-size: 1rem;
+      text-align: center;
+      color: #333;
+    }
+  </style>
 </head>
 <body>
 
-  <div class="container mt-5">
-    <h1 class="text-center">Kung Food - Carta</h1>
+  <!-- NAV Y HEADER OMITIDO PARA ENFOCARNOS EN LOS CARRUSELES -->
 
-    <!-- Entrantes -->
-    <h2 class="mt-5">Entrantes</h2>
-    <div class="row">
-      <div class="col-md-4 text-center">
-        <img src="img/carta/entrantes/Bao_pollo.jpeg" class="img-fluid rounded" alt="Bao de Pollo">
-        <p><strong>Bao de Pollo:</strong> Panecillo al vapor con pollo marinado, salsa hoisin y encurtidos.</p>
+  <!-- Entrantes -->
+  <div id="carruselEntrantes" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <h2 class="titulos-carta">Entrantes</h2>
+      <hr>
+      <div class="carousel-item active">
+        <div class="row">
+          <div class="col-4">
+            <img src="img/carta/entrantes/Bao_pollo.jpeg" class="d-block w-100" alt="Bao de Pollo" onclick="mostrarDescripcion('descEntrantes', 'Bao de pollo marinado con salsa hoisin.')">
+          </div>
+          <div class="col-4">
+            <img src="img/carta/entrantes/Bao_tofu.jpeg" class="d-block w-100" alt="Bao de Tofu" onclick="mostrarDescripcion('descEntrantes', 'Bao relleno de tofu crujiente y verduras frescas.')">
+          </div>
+          <div class="col-4">
+            <img src="img/carta/entrantes/Bao_vegetariano.jpeg" class="d-block w-100" alt="Bao Vegetariano" onclick="mostrarDescripcion('descEntrantes', 'Versión vegetariana con setas y zanahoria encurtida.')">
+          </div>
+        </div>
       </div>
-      <div class="col-md-4 text-center">
-        <img src="img/carta/entrantes/Bao_tofu.jpeg" class="img-fluid rounded" alt="Bao de Tofu">
-        <p><strong>Bao de Tofu:</strong> Bao relleno de tofu crujiente, pepino y mayonesa de sésamo.</p>
-      </div>
-      <div class="col-md-4 text-center">
-        <img src="img/carta/entrantes/Bao_vegetariano.jpeg" class="img-fluid rounded" alt="Bao Vegetariano">
-        <p><strong>Bao Vegetariano:</strong> Relleno de setas salteadas, cebolla morada y zanahoria.</p>
-      </div>
-
-      <div class="col-md-4 text-center mt-4">
-        <img src="img/carta/entrantes/Edamame.jpeg" class="img-fluid rounded" alt="Edamame">
-        <p><strong>Edamame:</strong> Vainas de soja cocidas y saladas, perfectas para picar.</p>
-      </div>
-      <div class="col-md-4 text-center mt-4">
-        <img src="img/carta/entrantes/Gyozas.jpeg" class="img-fluid rounded" alt="Gyozas">
-        <p><strong>Gyozas:</strong> Empanadillas japonesas rellenas de cerdo y verduras, al vapor y doradas.</p>
-      </div>
-      <div class="col-md-4 text-center mt-4">
-        <img src="img/carta/entrantes/Pollo-teriyaki.jpeg" class="img-fluid rounded" alt="Pollo Teriyaki">
-        <p><strong>Pollo Teriyaki:</strong> Tiras de pollo salteadas en salsa teriyaki con sésamo.</p>
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col-4">
+            <img src="img/carta/entrantes/Edamame.jpeg" class="d-block w-100" alt="Edamame" onclick="mostrarDescripcion('descEntrantes', 'Vainas de soja hervidas con sal marina.')">
+          </div>
+          <div class="col-4">
+            <img src="img/carta/entrantes/Gyozas.jpeg" class="d-block w-100" alt="Gyozas" onclick="mostrarDescripcion('descEntrantes', 'Empanadillas japonesas de cerdo y verduras.')">
+          </div>
+          <div class="col-4">
+            <img src="img/carta/entrantes/Pollo-teriyaki.jpeg" class="d-block w-100" alt="Pollo Teriyaki" onclick="mostrarDescripcion('descEntrantes', 'Tiras de pollo glaseadas en salsa teriyaki.')">
+          </div>
+        </div>
       </div>
     </div>
-
-    <!-- Principales -->
-    <h2 class="mt-5">Platos Principales</h2>
-    <div class="row">
-      <div class="col-md-4 text-center">
-        <img src="img/carta/principales/Arroz-FRITO.jpeg" class="img-fluid rounded" alt="Arroz Frito">
-        <p><strong>Arroz Frito:</strong> Arroz salteado con verduras, huevo y salsa de soja.</p>
-      </div>
-      <div class="col-md-4 text-center">
-        <img src="img/carta/principales/Arroz_pato.jpeg" class="img-fluid rounded" alt="Arroz con Pato">
-        <p><strong>Arroz con Pato:</strong> Arroz jazmín acompañado de pato crujiente y especias asiáticas.</p>
-      </div>
-      <div class="col-md-4 text-center">
-        <img src="img/carta/principales/Tonkatsu.jpeg" class="img-fluid rounded" alt="Tonkatsu">
-        <p><strong>Tonkatsu:</strong> Chuleta de cerdo empanada estilo japonés con salsa agridulce.</p>
-      </div>
-
-      <div class="col-md-4 text-center mt-4">
-        <img src="img/carta/principales/Noodles.jpeg" class="img-fluid rounded" alt="Noodles">
-        <p><strong>Noodles:</strong> Fideos salteados con verduras y proteína a elección.</p>
-      </div>
-      <div class="col-md-4 text-center mt-4">
-        <img src="img/carta/principales/Sushi.jpeg" class="img-fluid rounded" alt="Sushi Variado">
-        <p><strong>Sushi Variado:</strong> Selección de makis, nigiris y uramakis frescos.</p>
-      </div>
-      <div class="col-md-4 text-center mt-4">
-        <img src="img/carta/principales/Yakisoba-ramen.jpeg" class="img-fluid rounded" alt="Yakisoba Ramen">
-        <p><strong>Yakisoba Ramen:</strong> Fideos japoneses con salsa yakisoba y verduras.</p>
-      </div>
-    </div>
-
-    <!-- Postres -->
-    <h2 class="mt-5">Postres</h2>
-    <div class="row">
-      <div class="col-md-4 text-center">
-        <img src="img/carta/postres/CheeseCake-Fresa.jpeg" class="img-fluid rounded" alt="Cheesecake de Fresa">
-        <p><strong>Cheesecake de Fresa:</strong> Tarta de queso suave con cobertura de fresa natural.</p>
-      </div>
-      <div class="col-md-4 text-center">
-        <img src="img/carta/postres/CheeseCake-Oreo.jpeg" class="img-fluid rounded" alt="Cheesecake de Oreo">
-        <p><strong>Cheesecake de Oreo:</strong> Tarta de queso con base y topping de galleta Oreo.</p>
-      </div>
-      <div class="col-md-4 text-center">
-        <img src="img/carta/postres/Mochi.jpeg" class="img-fluid rounded" alt="Mochi">
-        <p><strong>Mochi:</strong> Dulce japonés de arroz glutinoso relleno de helado.</p>
-      </div>
-
-      <div class="col-md-4 text-center mt-4">
-        <img src="img/carta/postres/Dorayaki.jpeg" class="img-fluid rounded" alt="Dorayaki">
-        <p><strong>Dorayaki:</strong> Bizcochos rellenos de pasta dulce de judía roja (anko).</p>
-      </div>
-      <div class="col-md-4 text-center mt-4">
-        <img src="img/carta/postres/Mooncake.jpeg" class="img-fluid rounded" alt="Mooncake">
-        <p><strong>Mooncake:</strong> Pastel tradicional relleno de pasta dulce, típico del festival lunar.</p>
-      </div>
-      <div class="col-md-4 text-center mt-4">
-        <img src="img/carta/postres/taiyaki.jpeg" class="img-fluid rounded" alt="Taiyaki">
-        <p><strong>Taiyaki:</strong> Pastel en forma de pez relleno de crema o anko.</p>
-      </div>
-    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carruselEntrantes" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carruselEntrantes" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+    <p id="descEntrantes" class="descripcion-plato"></p>
   </div>
 
+  <!-- Principales -->
+  <div id="carruselPrimeros" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <h2 class="titulos-carta">Principales</h2>
+      <hr>
+      <div class="carousel-item active">
+        <div class="row">
+          <div class="col-4">
+            <img src="img/carta/principales/Arroz-FRITO.jpeg" class="d-block w-100" alt="Arroz Frito" onclick="mostrarDescripcion('descPrincipales', 'Arroz salteado con huevo, verduras y soja.')">
+          </div>
+          <div class="col-4">
+            <img src="img/carta/principales/Arroz_pato.jpeg" class="d-block w-100" alt="Arroz con Pato" onclick="mostrarDescripcion('descPrincipales', 'Arroz jazmín con pato crujiente y especias.')">
+          </div>
+          <div class="col-4">
+            <img src="img/carta/principales/Tonkatsu.jpeg" class="d-block w-100" alt="Tonkatsu" onclick="mostrarDescripcion('descPrincipales', 'Chuleta de cerdo empanada con salsa tonkatsu.')">
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col-4">
+            <img src="img/carta/principales/Noodles.jpeg" class="d-block w-100" alt="Noodles" onclick="mostrarDescripcion('descPrincipales', 'Fideos salteados con verduras y soja.')">
+          </div>
+          <div class="col-4">
+            <img src="img/carta/principales/Sushi.jpeg" class="d-block w-100" alt="Sushi" onclick="mostrarDescripcion('descPrincipales', 'Selección de sushi fresco: nigiris, makis y más.')">
+          </div>
+          <div class="col-4">
+            <img src="img/carta/principales/Yakisoba-ramen.jpeg" class="d-block w-100" alt="Yakisoba Ramen" onclick="mostrarDescripcion('descPrincipales', 'Fideos con salsa yakisoba y vegetales.')">
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carruselPrimeros" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carruselPrimeros" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+    <p id="descPrincipales" class="descripcion-plato"></p>
+  </div>
+
+  <!-- Postres -->
+  <div id="carruselPostres" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <h2 class="titulos-carta">Postres</h2>
+      <hr>
+      <div class="carousel-item active">
+        <div class="row">
+          <div class="col-4">
+            <img src="img/carta/postres/CheeseCake-Fresa.jpeg" class="d-block w-100" alt="Cheesecake Fresa" onclick="mostrarDescripcion('descPostres', 'Tarta de queso cremosa con mermelada de fresa.')">
+          </div>
+          <div class="col-4">
+            <img src="img/carta/postres/CheeseCake-Oreo.jpeg" class="d-block w-100" alt="Cheesecake Oreo" onclick="mostrarDescripcion('descPostres', 'Cheesecake con base y topping de Oreo.')">
+          </div>
+          <div class="col-4">
+            <img src="img/carta/postres/Mochi.jpeg" class="d-block w-100" alt="Mochi" onclick="mostrarDescripcion('descPostres', 'Bola de arroz japonés rellena de helado.')">
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col-4">
+            <img src="img/carta/postres/Dorayaki.jpeg" class="d-block w-100" alt="Dorayaki" onclick="mostrarDescripcion('descPostres', 'Bizcochos rellenos de pasta dulce de judía roja.')">
+          </div>
+          <div class="col-4">
+            <img src="img/carta/postres/Mooncake.jpeg" class="d-block w-100" alt="Mooncake" onclick="mostrarDescripcion('descPostres', 'Pastel relleno tradicional del festival lunar.')">
+          </div>
+          <div class="col-4">
+            <img src="img/carta/postres/taiyaki.jpeg" class="d-block w-100" alt="Taiyaki" onclick="mostrarDescripcion('descPostres', 'Pastel japonés con forma de pez relleno.')">
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carruselPostres" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carruselPostres" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+    <p id="descPostres" class="descripcion-plato"></p>
+  </div>
+
+  <!-- Footer -->
   <footer class="mt-5 text-center">
     <p class="frase-pie">"En Kung Food el sabor es tu maestro"</p>
     <p>&copy; 2025 - Kung Food</p>
   </footer>
 
+  <!-- Scripts -->
+  <script>
+    function mostrarDescripcion(idElemento, texto) {
+      document.getElementById(idElemento).textContent = texto;
+    }
+  </script>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
